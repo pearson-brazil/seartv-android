@@ -20,6 +20,11 @@
             android:name=".ui.HomeActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".ui.MovieDetailsActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
     </application>
 
 </manifest>
