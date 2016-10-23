@@ -54,4 +54,9 @@ public class MovieDetailsActivity extends BaseActivity {
     public void onClickCast() {
         startActivity(new Intent(this, CastMovieListActivity.class));
     }
+
+    @OnClick(R.id.images)
+    public void onClickImageGallery() {
+        startActivity(new Intent(this, ImageGalleryActivity.class));
+    }
 }
