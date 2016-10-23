@@ -22,7 +22,8 @@ public class BaseActivity extends AppCompatActivity {
         super.setContentView(layoutResID);
         ButterKnife.bind(this);
 
-        toolbar.setElevation(8);
+        if (toolbar != null)
+            toolbar.setElevation(8);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
     }
