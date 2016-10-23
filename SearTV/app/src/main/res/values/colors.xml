@@ -13,4 +13,6 @@
     <color name="titles_header_movie_detail">#8Affffff</color>
     <color name="bodies_header_movie_detail">#DEffffff</color>
     <color name="low_alpha_black">#b0000000</color>
+    <color name="character_name_color">#8affffff</color>
+    <color name="div_line">#1f000000</color>
 </resources>
