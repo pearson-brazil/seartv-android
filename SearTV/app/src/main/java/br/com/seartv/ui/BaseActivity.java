@@ -12,7 +12,6 @@ import butterknife.ButterKnife;
 
 public class BaseActivity extends AppCompatActivity {
 
-    @Nullable
     @Bind(R.id.toolbar)
     Toolbar toolbar;
     @Bind(R.id.toolbar_title)
