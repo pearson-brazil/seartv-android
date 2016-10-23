@@ -49,4 +49,9 @@ public class MovieDetailsActivity extends BaseActivity {
     private void fillInformation() {
 
     }
+
+    @OnClick(R.id.cast)
+    public void onClickCast() {
+        startActivity(new Intent(this, CastMovieListActivity.class));
+    }
 }
