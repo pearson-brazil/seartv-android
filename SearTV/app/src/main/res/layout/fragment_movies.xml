@@ -4,20 +4,25 @@
     android:layout_height="match_parent"
     tools:context="br.com.seartv.ui.HomeActivity">
 
-    <ScrollView
-        android:layout_below="@id/view_toolbar"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lst_movies"
+        android:scrollbars="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/low_alpha_black"
+        android:visibility="gone">
 
-            <include layout="@layout/item_movie"/>
-            <include layout="@layout/item_movie"/>
-            <include layout="@layout/item_movie"/>
-        </LinearLayout>
-    </ScrollView>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/circle_progress"/>
+
+    </RelativeLayout>
 
 </RelativeLayout>
