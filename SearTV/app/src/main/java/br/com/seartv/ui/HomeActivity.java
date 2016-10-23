@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import br.com.seartv.R;
+import br.com.seartv.custom.AboutDialog;
 import br.com.seartv.custom.ViewPagerAdapter;
 import butterknife.Bind;
 
@@ -29,8 +30,6 @@ public class HomeActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        setHomeButton();
-        setToolbarTitle(R.string.movies);
 
         // Adicionando Tabs com título em cada uma delas
         tabLayout.addTab(tabLayout.newTab().setText(getResources().getString(R.string.genres)));
@@ -89,6 +88,7 @@ public class HomeActivity extends BaseActivity {
                 finish();
                 break;
             case R.id.about:
+                new AboutDialog(this).showDialog();
                 break;
         }
         return super.onOptionsItemSelected(item);

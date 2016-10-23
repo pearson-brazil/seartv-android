@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        style="@style/TitleDialogStyle"
+        android:text="Sobre"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/dialog_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Projeto Movies\nv1.0\nCurso de Desenvolvimento de Aplicativos Móveis\n2016"
+        android:lineSpacingExtra="10dp"
+        style="@style/BodyDialogStyle"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/btn_positive"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="6dp"
+        android:gravity="right"
+        android:textAllCaps="true"
+        android:text="FECHAR"
+        style="@style/OkDialogStyle" />
+
+</LinearLayout>
