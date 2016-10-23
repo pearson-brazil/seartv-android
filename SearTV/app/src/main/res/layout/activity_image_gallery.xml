@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_gallery_style"
+    tools:context="br.com.seartv.ui.ImageGalleryActivity">
+
+    <include android:id="@+id/view_toolbar"
+        layout="@layout/toolbar"/>
+
+    <GridView
+        android:layout_below="@+id/view_toolbar"
+        android:id="@+id/image_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawSelectorOnTop="true"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:focusable="true"
+        android:clickable="true"/>
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_below="@+id/view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/low_alpha_black"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/circle_progress"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

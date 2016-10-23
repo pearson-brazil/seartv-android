@@ -28,6 +28,11 @@
             android:name=".ui.CastMovieListActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".ui.ImageGalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ImageDetailActivity" />
     </application>
 
 </manifest>
