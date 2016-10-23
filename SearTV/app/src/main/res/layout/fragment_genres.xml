@@ -4,5 +4,12 @@
     android:layout_height="match_parent"
     tools:context="br.com.seartv.ui.HomeActivity">
 
+    <ListView
+        android:id="@+id/lst_genres"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/LinkDetailStyle"
+        android:dividerHeight="0dp"
+        android:divider="@null"/>
 
 </RelativeLayout>

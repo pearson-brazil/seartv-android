@@ -2,4 +2,14 @@
     <string name="app_name">SearTV</string>
     <string name="movies">Filmes</string>
     <string name="genres">Gêneros</string>
+
+    <!-- Gêneros -->
+    <string-array name="genres_category">
+        <item>Comédia</item>
+        <item>Drama</item>
+        <item>Terror</item>
+        <item>Ação</item>
+        <item>Aventura</item>
+        <item>Documentáro</item>
+    </string-array>
 </resources>
