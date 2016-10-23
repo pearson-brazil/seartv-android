@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SearTV</string>
     <string name="movies">Filmes</string>
+    <string name="genres">Gêneros</string>
 </resources>
