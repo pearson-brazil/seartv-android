@@ -35,4 +35,19 @@
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">20sp</item>
     </style>
+
+    <style name="TitleDialogStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BodyDialogStyle">
+        <item name="android:textColor">@color/body_dialog_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="OkDialogStyle">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>
