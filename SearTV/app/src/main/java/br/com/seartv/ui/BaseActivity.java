@@ -22,10 +22,14 @@ public class BaseActivity extends AppCompatActivity {
         super.setContentView(layoutResID);
         ButterKnife.bind(this);
 
-        if (toolbar != null)
+        if (toolbar != null) {
             toolbar.setElevation(8);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+            setSupportActionBar(toolbar);
+        }
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
     }
 
     public void setHomeButton() {
