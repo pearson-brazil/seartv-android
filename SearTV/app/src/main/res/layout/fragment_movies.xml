@@ -4,7 +4,11 @@
     android:layout_height="match_parent"
     tools:context="br.com.seartv.ui.HomeActivity">
 
+    <include android:id="@+id/movies_filter"
+        layout="@layout/filter" />
+
     <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/movies_filter"
         android:id="@+id/lst_movies"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
